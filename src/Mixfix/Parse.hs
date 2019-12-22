@@ -69,7 +69,7 @@ charLiteral :: Parser Char
 charLiteral = label "char" $ lexeme $ between (char '\'') (char '\'') L.charLiteral
 
 identifier :: Parser Text
-identifier = label "identifier" $ lexeme $ try opIdent <|> try letterIdent
+identifier = label "identifier" $ lexeme $ (<>) . Text.pack <$> many (char '_') <*> (try opIdent <|> try letterIdent)
     where
         letterIdent :: Parser Text
         letterIdent = do
