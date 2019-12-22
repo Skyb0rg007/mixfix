@@ -1,0 +1,2 @@
+:set prompt " *> "
+:set -XOverloadedStrings -XTypeApplications -XScopedTypeVariables -XFlexibleInstances -XFlexibleContexts -XMultiParamTypeClasses

@@ -1,0 +1,60 @@
+-- vim: set ft=cabal :
+
+packages: ./mixfix.cabal
+
+compiler: ghcjs
+
+constraints:
+    reflex == 0.6.3,
+    reflex-dom-core == 0.5.3
+
+--
+-- reflex-frp/reflex
+--
+source-repository-package
+    type: git
+    location: https://github.com/reflex-frp/reflex.git
+
+--
+-- reflex-frp/reflex-dom
+--
+source-repository-package
+    type: git
+    location: https://github.com/reflex-frp/reflex-dom.git
+    subdir: chrome-test-utils
+source-repository-package
+    type: git
+    location: https://github.com/reflex-frp/reflex-dom.git
+    subdir: reflex-dom-core
+source-repository-package
+    type: git
+    location: https://github.com/reflex-frp/reflex-dom.git
+    subdir: reflex-dom
+
+--
+-- ghcjs/jsaddle
+--
+-- source-repository-package
+    -- type: git
+    -- location: https://github.com/ghcjs/jsaddle.git
+    -- subdir: jsaddle-clib
+-- source-repository-package
+    -- type: git
+    -- location: https://github.com/ghcjs/jsaddle.git
+    -- subdir: jsaddle-warp
+-- source-repository-package
+    -- type: git
+    -- location: https://github.com/ghcjs/jsaddle.git
+    -- subdir: jsaddle-webkit2gtk
+-- source-repository-package
+    -- type: git
+    -- location: https://github.com/ghcjs/jsaddle.git
+    -- subdir: jsaddle-webkitgtk
+-- source-repository-package
+    -- type: git
+    -- location: https://github.com/ghcjs/jsaddle.git
+    -- subdir: jsaddle-wkwebview
+source-repository-package
+    type: git
+    location: https://github.com/ghcjs/jsaddle.git
+    subdir: jsaddle

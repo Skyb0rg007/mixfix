@@ -1,0 +1,39 @@
+resolver: lts-14.18
+
+packages:
+- .
+
+flags:
+  reflex-dom:
+    webkit2gtk: true
+
+extra-deps:
+- github: reflex-frp/reflex-dom
+  commit: 94c26076a71f229b5bd27128cf6fc0dbcba011ac
+  subdirs:
+  - chrome-test-utils
+  - reflex-dom-core
+  - reflex-dom
+- github: reflex-frp/reflex
+  commit: 4b04fc4f5aa474406e6f331de5d993154a3a4535
+- github: ghcjs/jsaddle
+  commit: c2b9e3eb9ab4da855dcb684cca279b41c1c4d52e
+  subdirs:
+  - jsaddle-webkit2gtk
+- bimap-0.3.3@sha256:232518c0410990665b9c8677eb9318ee355c001d58945ddcbedec3baa30b4160,1475
+- constraints-extras-0.3.0.2@sha256:bf6884be65958e9188ae3c9e5547abfd6d201df021bff8a4704c2c4fe1e1ae5b,1784
+- dependent-map-0.3@sha256:dc745864d5116bbd59ad29100faec74c79e681d35808547023619544c0e9f9b7,1574
+- dependent-sum-0.6.2.0@sha256:bff37c85b38e768b942f9d81c2465b63a96076f1ba006e35612aa357770807b6,1856
+- dependent-sum-template-0.1.0.0@sha256:477de784b63b970d69d8de84753967c2dfd84224a958549c43c770802d18f0df,1605
+- ghcjs-dom-0.9.4.0@sha256:c2b3d25145e24b66a8a5078c0d750305b577aeff05957cf282d74f6e8d2424dd,32082
+- gi-webkit2-4.0.25@sha256:9cba3e5fce1cc7e10b4bdd35fb5d3efb735e9c14e5ed7932ca036f71ded05e2c,10532
+- jsaddle-0.9.6.0@sha256:03b3792794759587c69dd93c79a3f743e0b4032a3617c38f7841f8e16327e013,4379
+- monoidal-containers-0.6@sha256:73067b83e50be95bedb79ab78f5d90c8530aaea7473d8b19f58aeba3ca4393cc,2566
+- ref-tf-0.4.0.2@sha256:69de3550250e0cd69f45d080359cb314a9487c915024349c75b78732bbee9332,1134
+- webkit2gtk3-javascriptcore-0.14.3.0@sha256:e1e410f39ca702d509856e20e113db0e1e8d79315328736084b6c5a93541e59a,2015
+- witherable-0.3.1@sha256:ed3d5bc9eb1c08fa9704d9e143cdf622e1bd80b847cd5ede8c07da7bc7981ab9,1313
+- zenc-0.1.1@sha256:e4be3e5e9fe1a1ade05910909c6e5b5a8eff72e697868b03955c9781b0443947,964
+- ghcjs-dom-jsaddle-0.9.4.0@sha256:31ddfc5ebcbb4811b0c956fd5fcf106643012b46bb4e0bc2f15d09db1d116fbb,39525
+- gi-soup-2.4.22@sha256:ae2681cdb9470bf0f6026e76b53e96b661d9592a9227d99929e32df11871f8e2,8257
+- gtk2hs-buildtools-0.13.5.1@sha256:bba050d5035c6375d0adc04a9000a58689a1b32284753d408a1181697abfcc6b,5288
+- jsaddle-dom-0.9.3.2@sha256:a50147c183fc3c44ae209ecbbf58bc99e3205aa87372d0635d56e775d9c2186e,75688
